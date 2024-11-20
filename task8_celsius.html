@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+          border: 10px solid rgb(249, 242, 152);
+          height: 300px;
+          width: 800px;
+          position:absolute;
+          top: 30%;
+          left: 26%;
+          box-shadow: 10px 10px 20px orange;
+          background-image: url(/maths\ \(1\).png);
+        }
+        #text{
+            margin-left: 240px;
+        }
+        #text2{
+            margin-left: 240px;
+        }
+        #laza{
+            font-size: 20px;
+            color: blueviolet;
+            margin-left: 200px;
+        }
+    </style>
+    <script>
+        function doF(){
+            
+            n=document.getElementById("text2").value;
+            
+            f=(n*(9/5))+32;
+            msi= "Equivalent temp in fahrenheit ="+f+"F";
+            document.getElementById("laza").innerHTML=msi;
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="box">
+        <h1 id="text">Celcius to Fahrenheit</h1>
+        <h2 id="text">Enter Celcius</h2>
+        <input type="text" id="text2" placeholder="Celcius temp" onKeyup="doF()">
+        <div id="laza">
+
+        </div>
+    </div>
+</body>
+</html>

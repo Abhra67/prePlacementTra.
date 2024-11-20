@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #container{
+        height: 400px;
+        width: 400px;
+        border: 10px solid rgb(228, 6, 6);
+        position: absolute;
+        background-color: rgba(0, 255, 153, 0.653);
+        left: 35%;
+        top: 20%;
+        border-radius: 2%;
+        box-shadow: inset 0 4px 10px rgba(204, 250, 105, 0.865);
+        box-shadow: 0 0 10px 10px rgba(248, 157, 52, 0.858)
+      }
+      #but{
+        background-color: rgb(250, 149, 86);
+        /* margin: 20px; */
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 150px;
+      }
+      #box{
+        margin-top: 20px;
+        margin-left: 110px;
+      }
+      #text{
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 30px;
+      }
+    </style>
+    <script>
+ 
+        function doM(){
+            n=document.f1.num.value;
+            alert(n);
+            document.write("<h2 the multiplication series is..");
+            for(i=1;i<=10;i++)
+            {
+                t=n*i;
+                document.write("<h2>"+n+"x"+i+"="+t);
+ 
+            }
+        }
+       
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="text">print multiplication table</h1>
+        <form action=""name="f1">
+            <input type="number" id="box" name="num" placeholder="         enter the no"><br> <br><br>
+            <input type="button"  value="find table" id="but" onclick="doM()">
+        </form>
+    </div>
+ <h2>choose transport</h2>
+    <label for="male">cargo</label>
+  <input type="radio" id="male" name="gender" value="male" checked>
+  
+  <label for="female">airways</label>
+  <input type="radio" id="female" name="gender" value="female">
+  
+  <label for="other">toto</label>
+  <input type="radio" id="other" name="gender" value="other" ><br><br><br>
+  
+<button type="submit">submittt</button>
+    
+</body>
+</html>
