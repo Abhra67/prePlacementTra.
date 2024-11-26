@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* h1{
+        color: red;
+      } */
+    </style>
+    <script src="./jquery-3.7.1.js">
+       
+    </script>
+    <script>
+        //jquery code........................
+        $(document).ready(function(){
+            $("h1").css("color","blue");
+            $("p").css("font-size","40px");
+        });
+            $("#ab").css("color","yellow");
+            $("#ab").css("font-weight","bold");
+            $("p").click(function(){
+                $(this).fadeOut();});
+                
+
+           $("#hide").click( function(){
+          $("p").toggle(1000);}
+   );
+            
+            
+       
+    </script>
+</head>
+    <h1>welcome jquery</h1>
+    <p>i am <span id="ab">abhra </span></p>
+
+<body>
+    
+</body>
+</html>
